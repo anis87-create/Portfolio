@@ -3,7 +3,7 @@ import Lottie from 'lottie-react';
 import contact from '../assets/Contact.json';
 const Contact = () => {
   return (
-    <div className='bg-gray-800 p-5'>
+    <section id='contact' className='bg-gray-800 p-5'>
         <div className='container mx-auto p-2 text-left text-white'>
          
             <h2 className='font-bold text-3xl mb-4'>Get In Touch</h2>
@@ -38,7 +38,7 @@ const Contact = () => {
                </form>
             </div> 
         </div>
-    </div>
+    </section>
   )
 }
 

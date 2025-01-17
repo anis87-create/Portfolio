@@ -1,3 +1,7 @@
 .projects-section {
     
 }
+
+.project-type::focus {
+   background: white
+}
