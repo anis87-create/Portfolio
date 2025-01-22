@@ -23,9 +23,6 @@ const Projects = ({projects}) => {
       }else {
         setProjectItems(projects)
       }
-
-      
-    
   },[projects, activeIndex]);
   return (
     <section id='projects' className='projects-section  py-10'>
