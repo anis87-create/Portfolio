@@ -18,7 +18,7 @@ const Home = () => {
       </div>
       <div class="flex flex-col h-30 justify-center bg-gray-200 p-4 rounded-full md:block">
         <a href='https://www.facebook.com/anis.zarrouk.73/' target="_blank" rel="noreferrer"><img src={facebook} alt="" class="w-20"></img></a>
-        <a href='https://www.linkedin.com/feed/' target='_blank' rel="noreferrer"><img src={linkedin} alt="" class="w-20"></img></a>
+        <a href='https://www.linkedin.com/in/anis-zarrouk-2b5b28246/' target='_blank' rel="noreferrer"><img src={linkedin} alt="" class="w-20"></img></a>
         <a href='https://github.com/anis87-create' target='_blank' rel="noreferrer"><img src={github} alt="" class="w-20" ></img></a>
      </div>
 

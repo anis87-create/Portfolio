@@ -16,6 +16,9 @@ module.exports = {
       animation: {
         progress: 'progress 2s ease-in-out',
       },
+      colors: {
+        reactBlue: '#61dafb', // Nom personnalisé pour la couleur
+      },
     },
   },
   plugins: [],

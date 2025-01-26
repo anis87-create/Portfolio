@@ -7,7 +7,7 @@ import '../styles/Projects.css';
 import ProjectItem from './ProjectItem';
 const Projects = ({projects}) => {
   
-  const items = ['All','WebApp', 'MobileApp','UI/UX'];
+  const items = ['All','WebApp', 'MobileApp'];
   const [activeIndex, setActiveIndex] = useState(0);
   const [projectItems, setProjectItems] = useState(projects);
   const onClick = (index) => {
@@ -18,17 +18,15 @@ const Projects = ({projects}) => {
         setProjectItems(projects.filter(project => project.category='Web App'));
       }else if(activeIndex === 2){
         setProjectItems(projects.filter(project => project.category=== 'Mobile App'))
-      }else if(activeIndex === 3){ 
-        setProjectItems(projects.filter(project => project.category=== 'UI/UX'))
       }else {
         setProjectItems(projects)
       }
   },[projects, activeIndex]);
   return (
-    <section id='projects' className='projects-section  py-10'>
+    <section id='projects' className='section  py-10'>
         <div className='container mx-auto p-4'>
-            <h2 className='text-left mb-8 w-50 uppercase text-3xl text-center  font-bold'>My Projects</h2>
-            <div className='flex justify-center'>
+            <h2 className='text-left mb-8 w-50 uppercase text-3xl text-center  font-bold section_title'>My Projects</h2>
+            <div className='flex '>
             {items.map((item, index) => (
               <ProjectItem 
                   name={item}

@@ -10,6 +10,7 @@ const Navbar = () => {
       <li className="p-2"><a className="no-underline relative text-lg hover:text-red-500 scroll-smooth" href="#about">About</a></li>
       <li className="p-2"><a className="no-underline relative text-lg hover:text-red-500 scroll-smooth" href="#projects">Projects</a></li>
       <li className="p-2"><a className="no-underline relative text-lg hover:text-red-500 scroll-smooth" href="#services">Services</a></li>
+      <li className="p-2"><a className="no-underline relative text-lg hover:text-red-500 scroll-smooth" href="#experience">Experience</a></li>
       <li className="p-2"><a className="no-underline relative text-lg hover:text-red-500 scroll-smooth" href="#contact">Contact</a></li>
     </ul>
 
@@ -26,10 +27,10 @@ const Navbar = () => {
 
   {/* Mobile Menu */}
   <ul id="mobile-menu" className="md:hidden hidden bg-background/90 backdrop-blur-lg p-4">
-    <li className="block px-4 py-2 text-sm hover:bg-gray-700"><a href="#about" className="text-lg text-white">About</a></li>
-    <li className="block px-4 py-2 text-sm hover:bg-gray-700"><a href="#projects" className="text-lg text-white">Projects</a></li>
-    <li className="block px-4 py-2 text-sm hover:bg-gray-700"><a href="#testimonials" className="text-lg text-white">Testimonials</a></li>
-    <li className="block px-4 py-2 text-sm hover:bg-gray-700"><a href="#contact" className="text-lg text-white">Contact</a></li>
+    <li className="block px-4 py-2 text-sm hover:bg-red-400"><a href="#about" className="text-lg text-black hover:text-white">About</a></li>
+    <li className="block px-4 py-2 text-sm hover:bg-red-400"><a href="#projects" className="text-lg text-black hover:text-white">Projects</a></li>
+    <li className="block px-4 py-2 text-sm hover:bg-red-400"><a href="#testimonials" className="text-lg text-black hover:text-white">Testimonials</a></li>
+    <li className="block px-4 py-2 text-sm hover:bg-red-400"><a href="#contact" className="text-lg text-black hover:text-white">Contact</a></li>
   </ul>
 </nav>
 
