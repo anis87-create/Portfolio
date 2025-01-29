@@ -4,11 +4,12 @@ import Home from './Home';
 import ParticleBackground from './Particle';
 import About from './About';
 import Projects from './Projects';
-import Contact from './Contact';
+import Contact from './Footer';
 import { projects } from '../data/projects';
 import { services } from '../data/services';
 import Experience from './Experience';
 import Services from './Services';
+import Footer from './Footer';
 function App() {
   return (
     <>
@@ -20,10 +21,8 @@ function App() {
         <Services services={services}/>
         <Experience />
         <Projects projects={projects}/>
-        <Contact />
-        <div className='p-2 text-center'>  &copy; 2025 Anis Zarrouk. All rights reserved </div>
+        <Footer />
       </div>
-
     </>
   );
 }

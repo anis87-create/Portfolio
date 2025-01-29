@@ -3,7 +3,7 @@ import Lottie from 'lottie-react';
 import contact from '../assets/Contact.json';
 import emailJS from '@emailjs/browser';
 import Swal from 'sweetalert2'
-const Contact = () => {
+const Footer = () => {
   const formRef = useRef();
   const [form, setForm] =useState({
     from_name:'',
@@ -31,7 +31,8 @@ const Contact = () => {
     setForm((prevState) => ({ ...prevState, [e.target.name]: e.target.value }));
   }
   return (
-    <section id='contact' className='bg-gray-800 p-5'>
+    <section id='contact'>
+    <div  className='bg-gray-800 p-5'>
         <div className='container mx-auto p-2 text-left text-white'>
          
             <h2 className='font-bold text-3xl mb-4'>Get In Touch</h2>
@@ -66,8 +67,10 @@ const Contact = () => {
                </form>
             </div> 
         </div>
+    </div>
+    <div className='p-2 text-center'>  &copy; 2025 Anis Zarrouk. All rights reserved </div>
     </section>
   )
 }
 
-export default Contact
+export default Footer;
