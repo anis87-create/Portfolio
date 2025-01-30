@@ -9,6 +9,7 @@ const Navbar = () => {
     <ul className="hidden md:flex text-lg font-medium space-x-6">
       <li className="p-2"><a className="no-underline relative text-lg hover:text-red-500 scroll-smooth" href="#about">About</a></li>
       <li className="p-2"><a className="no-underline relative text-lg hover:text-red-500 scroll-smooth" href="#projects">Projects</a></li>
+      <li className="p-2"><a className="no-underline relative text-lg hover:text-red-500 scroll-smooth" href="#posts">Blog</a></li>
       <li className="p-2"><a className="no-underline relative text-lg hover:text-red-500 scroll-smooth" href="#services">Services</a></li>
       <li className="p-2"><a className="no-underline relative text-lg hover:text-red-500 scroll-smooth" href="#experience">Experience</a></li>
       <li className="p-2"><a className="no-underline relative text-lg hover:text-red-500 scroll-smooth" href="#contact">Contact</a></li>

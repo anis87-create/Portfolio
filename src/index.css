@@ -4,6 +4,7 @@
 :root {
   --title-color: hsl(244,24%, 26%);
 }
+
 html {
     scroll-behavior: smooth;
   }
@@ -15,4 +16,26 @@ html {
 .section {
   padding: 50px 0px;
   background: url('./assets/hero-bg.png')
+}
+
+@scroll-timeline --reveal-timeline {
+  source: auto;
+  orientation: block;
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h2 {
+  animation: reveal linear;
+  animation-timeline: --reveal-timeline;
+  animation-range: entry 0% cover 50%;
 }

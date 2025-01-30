@@ -10,6 +10,7 @@ import { services } from '../data/services';
 import Experience from './Experience';
 import Services from './Services';
 import Footer from './Footer';
+import Posts from './Posts';
 function App() {
   return (
     <>
@@ -21,6 +22,7 @@ function App() {
         <Services services={services}/>
         <Experience />
         <Projects projects={projects}/>
+        <Posts />
         <Footer />
       </div>
     </>

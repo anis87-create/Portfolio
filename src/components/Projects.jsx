@@ -25,10 +25,11 @@ const Projects = ({projects}) => {
   return (
     <section id='projects' className='section  py-10'>
         <div className='container mx-auto p-4'>
-            <h2 className='text-left mb-8 w-50 uppercase text-3xl text-center  font-bold section_title'>My Projects</h2>
-            <div className='flex '>
+            <h2 className='text-left mb-8 w-50 uppercase text-3xl   font-bold section_title'>My Projects</h2>
+            <div className='flex'>
             {items.map((item, index) => (
               <ProjectItem 
+                  key={index}
                   name={item}
                   onClick={() => onClick(index)}
                   isActive={activeIndex === index}
