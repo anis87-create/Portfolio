@@ -11,7 +11,7 @@ const About = () => {
   const [nbOfYears, setNbOfYears] = useState(0);
   const [projects, setProjects] = useState(0);
   const targetYears= 3;
-  const targetProjects= 1;
+  const targetProjects= 3;
   useEffect(() => {
     const firstInterval = setInterval(() => {
       setNbOfYears((prev) => {
@@ -43,7 +43,7 @@ const About = () => {
             <div className='flex flex-col flex-1 mb-6 md:mb-0'>
               <h2 className='font-bold text-2xl sm:text-3xl mb-4'>Know More About Me</h2>
               <p className='text-base sm:text-lg text-gray-600 leading-7 font-light mb-6'>
-                Apart from coding, I am passionate about learning new technologies and keeping myself up-to-date with the latest trends in web development. I also run a YouTube channel where I teach Javascript, MERN Stack development, Wordpress, and digital Marketing, helping others dive deep into the world of programming and technology.
+                Développeur Full Stack JS spécialisé dans la création d'applications SaaS et d'interfaces web modernes. J'ai travaillé sur des architectures multi-tenant avec gestion granulaire des rôles (RBAC), l'internationalisation sur 7 langues, et l'intégration de génération IA via OpenAI. Passionné par les outils IA appliqués aux workflows d'ingénierie logicielle.
               </p>
               <div className='flex'>
                 <div className='p-8 w-200 h-200 bg-white mr-4 flex flex-col text-center shadow-white border rounded-lg'>
@@ -90,35 +90,35 @@ const About = () => {
               <div className='flex items-center mb-4'>
                 <img src={js} alt='js' className='w-12 h-12 sm:w-16 sm:h-16' />
                 <div className='w-full bg-gray-200 rounded-full h-4 ml-4'>
-                  <div className='bg-yellow-500 h-4 rounded-full animate-progress' style={{ width: '70%' }}></div>
+                  <div className='bg-yellow-500 h-4 rounded-full animate-progress' style={{ width: '85%' }}></div>
                 </div>
               </div>
 
               <div className='flex items-center mb-4'>
                 <img src={react} alt='react' className='w-12 h-12 sm:w-16 sm:h-16' />
                 <div className='w-full bg-gray-200 rounded-full h-4 ml-4'>
-                  <div className='bg-reactBlue h-4 rounded-full animate-progress' style={{ width: '80%' }}></div>
+                  <div className='bg-reactBlue h-4 rounded-full animate-progress' style={{ width: '85%' }}></div>
                 </div>
               </div>
 
               <div className='flex items-center mb-4'>
                 <img src={redux} alt='redux' className='w-12 h-12 sm:w-16 sm:h-16' />
                 <div className='w-full bg-gray-200 rounded-full h-4 ml-4'>
-                  <div className='bg-purple-500 h-4 rounded-full animate-progress' style={{ width: '60%' }}></div>
+                  <div className='bg-purple-500 h-4 rounded-full animate-progress' style={{ width: '75%' }}></div>
                 </div>
               </div>
 
               <div className='flex items-center mb-4'>
                 <img src={node} alt='node' className='w-12 h-12 sm:w-16 sm:h-16' />
                 <div className='w-full bg-gray-200 rounded-full h-4 ml-4'>
-                  <div className='bg-green-600 h-4 rounded-full animate-progress' style={{ width: '50%' }}></div>
+                  <div className='bg-green-600 h-4 rounded-full animate-progress' style={{ width: '80%' }}></div>
                 </div>
               </div>
 
               <div className='flex items-center mb-4'>
                 <img src={express} alt='express' className='w-12 h-12 sm:w-16 sm:h-16' />
                 <div className='w-full bg-gray-200 rounded-full h-4 ml-4'>
-                  <div className='bg-black h-4 rounded-full animate-progress' style={{ width: '40%' }}></div>
+                  <div className='bg-black h-4 rounded-full animate-progress' style={{ width: '75%' }}></div>
                 </div>
               </div>
             </div>

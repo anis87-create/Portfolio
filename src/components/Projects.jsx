@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import project_1 from '../assets/project_1.png';
-import project_2 from '../assets/food_delivery_app.png';
-import project_3 from '../assets/youtube_clone.png';
-import github  from '../assets/github.png';
+import github from '../assets/github.png';
 import '../styles/Projects.css';
 import ProjectItem from './ProjectItem';
 const Projects = ({projects}) => {
@@ -15,7 +12,7 @@ const Projects = ({projects}) => {
   }
   useEffect(() => {
       if(activeIndex===1){
-        setProjectItems(projects.filter(project => project.category='Web App'));
+        setProjectItems(projects.filter(project => project.category === 'Web App'));
       }else if(activeIndex === 2){
         setProjectItems(projects.filter(project => project.category=== 'Mobile App'))
       }else {
@@ -43,7 +40,14 @@ const Projects = ({projects}) => {
                 <img src={project.projectImg} alt='first project' />
                 <div className='p-4' >
                     <h2 className='mb-4 font-semibold text-xl'>{project.name}</h2>
-                    <p className='text-xl'>{project.desc}</p>
+                    <p className='text-sm text-gray-600 mb-3'>{project.desc}</p>
+                    {project.tags && (
+                      <div className='flex flex-wrap gap-1 mb-2'>
+                        {project.tags.map(tag => (
+                          <span key={tag} className='px-2 py-0.5 text-xs bg-red-100 text-red-700 rounded-full'>{tag}</span>
+                        ))}
+                      </div>
+                    )}
                     <div className='flex gap-2'>
                        <button className='bg-red-500 text-white rounded p-2 mt-4'>Live Preview</button>
                        <button className='bg-black text-white rounded p-2 mt-4'>
