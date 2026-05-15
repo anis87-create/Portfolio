@@ -49,9 +49,22 @@ const Projects = ({projects}) => {
                       </div>
                     )}
                     <div className='flex gap-2'>
-                       <button className='bg-red-500 text-white rounded p-2 mt-4'>Live Preview</button>
+                       <button className='bg-red-500 text-white rounded p-2 mt-4'> <a
+    href={project.demoLink}
+    target='_blank'
+    rel='noopener noreferrer'
+    className='bg-red-500 text-white rounded p-2 mt-4'
+  >Live Preview</a></button>
                        <button className='bg-black text-white rounded p-2 mt-4'>
-                      <div className='flex items-center'><img src={github} width={20} height={20} alt='github' className='text-white mr-2'/> Github Link </div></button>
+                        <a
+    href={project.githubLink}
+    target='_blank'
+    rel='noopener noreferrer'
+    className='bg-black text-white rounded p-2 mt-4'
+  >
+                      <div className='flex items-center'><img src={github}  width={20} height={20} alt='github'  className='text-white mr-2'/> Github Link </div>
+                      </a>
+                      </button>
                     </div>
                 </div>
               </div>

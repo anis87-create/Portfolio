@@ -6,12 +6,5 @@ export const services = [
         id: 1,
         title:'Web Development',
         image: Image2,
-        description:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. '
     },
-    {
-        id: 1,
-        title:'Mobile Development',
-        image: Image1,
-        description:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. '
-    }
 ];
