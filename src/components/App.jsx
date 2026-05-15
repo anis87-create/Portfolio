@@ -4,7 +4,6 @@ import Home from './Home';
 import ParticleBackground from './Particle';
 import About from './About';
 import Projects from './Projects';
-import Contact from './Footer';
 import { projects } from '../data/projects';
 import { services } from '../data/services';
 import Experience from './Experience';
