@@ -7,6 +7,7 @@ import react from '../assets/react.png';
 import redux from '../assets/redux.png';
 import node from '../assets/node.png';
 import express from '../assets/express.png';
+import typescript from '../assets/typescript.png';
 const About = () => {
   const [nbOfYears, setNbOfYears] = useState(0);
   const [projects, setProjects] = useState(0);
@@ -119,6 +120,13 @@ const About = () => {
                 <img src={express} alt='express' className='w-12 h-12 sm:w-16 sm:h-16' />
                 <div className='w-full bg-gray-200 rounded-full h-4 ml-4'>
                   <div className='bg-black h-4 rounded-full animate-progress' style={{ width: '75%' }}></div>
+                </div>
+              </div>
+
+              <div className='flex items-center mb-4'>
+                <img src={typescript} alt='express' className='w-12 h-12 sm:w-16 sm:h-16' />
+                <div className='w-full bg-gray-200 rounded-full h-4 ml-4'>
+                  <div className='bg-black h-4 rounded-full animate-progress' style={{ width: '20%' }}></div>
                 </div>
               </div>
             </div>
